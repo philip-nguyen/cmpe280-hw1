@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script type="text/javascript" src="grading.js"></script>
+    </head>
+  <body>
+        <h2>Question 2</h2>
+        <form onSubmit="return setQuestion1()">
+            <div id="question-1" class="wrapper">
+            
+            <p class="box a">Select the cosine theorem formula.</p>
+            <div class="box c">
+                <div class="multichoice">
+                    <input type="radio" id="math-2-a" name="math-1" />
+                    <!-- Sum Diff Identities -->
+                    <label for="math-2-a">
+                        <math>
+                        <mrow>
+                            <mi>cos</mi>
+                            <mo>(</mo>
+                            <mi>&alpha;</mi>
+                            <mo>&plusmn;</mo>
+                            <mi>&beta;</mi>
+                            <mo>)</mo>
+                            <mo>=</mo>
+                            <mi>cos &alpha; cos &beta;</mi>
+                            <mo>&MinusPlus;</mo>
+                            <mi>sin &alpha; sin &beta;</mi>
+                        </mrow>
+                        </math>
+                    </label>
+                </div>
+                
+                <br>
+                <input type="radio" id="math-2-b" name="math-1"/>
+                <label for="math-2-b">
+                <!-- Slope formula with 1 point -->
+                <math >
+                    <mrow>
+                        <mi>sin &alpha;</mi>
+                        <mo>+</mo>
+                        <mi>sin &beta;</mi>
+                        <mo>=</mo>
+                        <mi>2sin</mi>
+                        <mo stretch="true">(</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>&alpha;</mi>
+                                    <mo>+</mo>
+                                    <mi>&beta;</mi>
+                                </mrow>
+                                <mi>2</mi>
+                            </mfrac>
+                        <mo stretch="true">)</mo>
+                        <mo>cos</mo>
+                        <mo stretch="true">(</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>&alpha;</mi>
+                                    <mo>-</mo>
+                                    <mi>&beta;</mi>
+                                </mrow>
+                                <mi>2</mi>
+                            </mfrac>
+                        <mo stretch="true">)</mo>
+                    </mrow>
+                </math>
+                </label>
+            </div>
+            <div class="box d">
+                <div class="multichoice">
+                <input type="radio" id="math-2-c" name="math-1" />
+                <label for="math-2-c">
+                    <!-- Circle formula -->
+                    <math>
+                        <mrow>
+                            <mi>sin</mi>
+                            <mo>(</mo>
+                            <mi>&alpha;</mi>
+                            <mo>&plusmn;</mo>
+                            <mi>&beta;</mi>
+                            <mo>)</mo>
+                            <mo>=</mo>
+                            <mi>sin &alpha; cos &beta;</mi>
+                            <mo>&plusmn;</mo>
+                            <mi>cos &alpha; sin &beta;</mi>
+                        </mrow>
+                    </math>
+                </label>
+                </div>
+                
+                <br>
+                <input type="radio" id="math-2-d" value="d" name="math-1" />
+                <label for="math-2-d">
+                <!-- Slope formula with 2 points -->
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mrow>
+                        <mi>sin &alpha;</mi>
+                        <mo>+</mo>
+                        <mi>sin &beta;</mi>
+                        <mo>=</mo>
+                        <mi>2sin</mi>
+                        <mo stretch="true">(</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>&alpha;</mi>
+                                    <mo>+</mo>
+                                    <mi>&beta;</mi>
+                                </mrow>
+                                <mi>2</mi>
+                            </mfrac>
+                        <mo stretch="true">)</mo>
+                        <mo>cos</mo>
+                        <mo stretch="true">(</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>&alpha;</mi>
+                                    <mo>-</mo>
+                                    <mi>&beta;</mi>
+                                </mrow>
+                                <mi>2</mi>
+                            </mfrac>
+                        <mo stretch="true">)</mo>
+                    </mrow>
+                    </math>
+                </label>
+            </div>
+                
+                
+            
+            <div class="box e">
+                <button type="button" value="Submit" onclick="setQuestion2()">Submit</button>
+                <button>Clear</button>
+            </div>
+            </div>
+        </form>
+  </body>
+</html>

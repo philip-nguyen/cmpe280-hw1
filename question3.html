@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script type="text/javascript" src="grading.js"></script>
+    </head>
+    <body>
+        <h2>Question 3</h2>
+        <form onSubmit="return setQuestion1()">
+            <div id="question-1" class="wrapper">
+              
+              <p class="box a">As per the latest twitter news, complete the article snippet
+                  given by selecting appropriate choices for the blanks.
+              </p>
+              <div class="box b"><img src="resources/slope.PNG" alt="slope image"></div>
+              <div class="box c">
+                <div class="multichoice">
+                  
+                </div>
+                
+                <br>
+                <input type="radio" id="math-1-b" name="math-1"/>
+                <label for="math-1-b">
+                  <!-- Slope formula with 1 point -->
+                  
+                </label>
+                <br>
+                <!-- TODO: another option -->
+              </div>
+              <div class="box d">
+                <div class="multichoice">
+                  <input type="radio" id="math-1-c" name="math-1" />
+                  <label for="math-1-c">
+                    <!-- Circle formula -->
+                    
+                  </label>
+                </div>
+                
+                <br>
+                <input type="radio" id="math-1-d" value="d" name="math-1" />
+                <label for="math-1-d">
+                  <!-- Slope formula with 2 points -->
+                  
+                </label>
+                <br>
+                <!-- TODO: another option -->
+              </div>
+              <div class="box e">
+                <button type="button" value="Submit" onclick="setQuestion1()">Submit</button>
+                <button>Clear</button>
+              </div>
+            </div>
+          </form>
+    </body>
+</html>
