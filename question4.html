@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" src="grading.js"></script>
+    </head>
+    <body>
+        <h2>Question 4</h2>
+        <form onSubmit="return setQuestion2()">
+            <div id="question-4" class="wrapper">
+            
+                <p class="box a">Watch the video and answer the following question.<br>
+                What is the source as mentioned in the video?</p>
+                <div class="box b">
+                    <iframe width="320" height="240" 
+                    src="https://www.youtube.com/embed/ih9jPaZct1w"></iframe>
+                </div>
+                <div class="box c">
+                    <div class="multichoice">
+                        <input type="radio" id="vid-a">
+                        <label for="vid-a">NASA.gov</label>
+                        <br>
+                        <input type="radio" id="vid-b">
+                        <label for="vid-b">Facebook</label>
+                    </div>
+                </div>
+                <div class="box d">
+                    <div class="multichoice">
+                        <input type="radio" id="vid-c">
+                        <label for="vid-c">Data.gov</label>
+                        <br>
+                        <input type="radio" id="vid-d">
+                        <label for="vid-d">XYZ.net</label>
+                    </div>
+                </div>
+                <div class="box e">
+                    <button type="button" value="Submit" onclick="setQuestion4()">Submit</button>
+                    <button>Clear</button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

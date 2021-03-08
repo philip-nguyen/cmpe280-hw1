@@ -3,25 +3,11 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <script type="text/javascript" src="grading.js"></script>
         
     </head>
     <body>
-      <script>
-        var marks1 = document.getElementsByName("twt-1");
-        var marks2 = document.getElementsByName("twt-2");
-        for(mark in marks1) {
-          marks1[mark].onclick = function() {
-            document.getElementById("blank-1").innerHTML = mark.value;
-          };
-        }
-        for(mark in marks2) {
-          marks2[mark].onclick = function() {
-            document.getElementById("blank-2").innerHTML = mark.value;
-          };
-        }
-      </script>
+      
         <h2>Question 3</h2>
         <form onSubmit="return setQuestion1()">
             <div id="question-1" class="wrapper">
@@ -43,13 +29,13 @@
               <div class="box c">
                 <div class="multichoice">
                   <label>Mark 1</label><br>
-                  <input type="radio" id="twt-1-a" name="twt-1" value="$650"/>
-                  <label for="twt-1-a">$650</label>
+                  <input type="radio" id="twt-1-a" name="twt-1" value="650"/>
+                  <label for="twt-1-a" >$650</label>
                   <br>
-                  <input type="radio" id="twt-1-b" name="twt-1" value="$550"/>
+                  <input type="radio" id="twt-1-b" name="twt-1" value="550"/>
                   <label for="twt-1-b">$550</label>
                   <br>
-                  <input type="radio" id="twt-1-c" name="twt-1" value="$450"/>
+                  <input type="radio" id="twt-1-c" name="twt-1" value="450"/>
                   <label for="twt-1-c">$450</label>
                 </div>
 
@@ -57,13 +43,13 @@
               <div class="box d">
                 <div class="multichoice">
                   <label>Mark 2</label><br>
-                  <input type="radio" id="twt-2-a" name="twt-2"/>
+                  <input type="radio" id="twt-2-a" name="twt-2" value="Twitter"/>
                   <label for="twt-2-a">Twitter</label>
                   <br>
-                  <input type="radio" id="twt-2-b" name="twt-2"/>
+                  <input type="radio" id="twt-2-b" name="twt-2" value="Google"/>
                   <label for="twt-2-b">Google</label>
                   <br>
-                  <input type="radio" id="twt-2-c" name="twt-2"/>
+                  <input type="radio" id="twt-2-c" name="twt-2" value="Facebook"/>
                   <label for="twt-2-c">Facebook</label>
                 </div>
                 
@@ -74,5 +60,22 @@
               </div>
             </div>
           </form>
+          <script type="text/javascript">
+            var marks1 = document.getElementsByName("twt-1");
+            var marks2 = document.getElementsByName("twt-2");
+            let length = document.getElementsByName("twt-1").length;
+            
+            // add event listeners to change the blanks
+            for(let i = 0; i < marks1.length; i++) {
+              console.log(i, marks1[i].value);
+              marks1[i].onclick = function() {
+                document.getElementById("blank-1").innerHTML = marks1[i].value;
+              }
+              marks2[i].onclick = function() {
+                document.getElementById("blank-2").innerHTML = marks2[i].value;
+              };
+            }
+            
+          </script>
     </body>
 </html>
