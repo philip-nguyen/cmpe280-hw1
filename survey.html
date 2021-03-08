@@ -14,29 +14,35 @@
                     <p>How did you like the quiz?</p><br>
                     <h3>Comments:</h3>
                     <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Comments here"></textarea>
+                    <br>
+                    <h2>Select Location</h2>
                 </div>
                 
                 <div class="box c">
-                    <div class="multichoice">
-                        <input type="radio" id="vid-a">
-                        <label for="vid-a">NASA.gov</label>
-
-                        <input type="radio" id="vid-b">
-                        <label for="vid-b">Facebook</label>
-                    </div>
+                    <label for="city-list">City:</label>
+                    <input list="cities" id="my-city" name="my-city" />
+                    <datalist id="cities">
+                        <option value="San Jose"></option>
+                        <option value="Sunnyvale"></option>
+                        <option value="Milpitas"></option>
+                        <option value="Campbell"></option>
+                        <option value="Cupertino"></option>
+                    </datalist>
                 </div>
                 <div class="box d">
-                    <div class="multichoice">
-                        <input type="radio" id="vid-c">
-                        <label for="vid-c">Data.gov</label>
-
-                        <input type="radio" id="vid-d">
-                        <label for="vid-d">XYZ.net</label>
-                    </div>
+                    <label for="city-list">Room Number:</label>
+                    <input list="rooms" id="room" name="room" />
+                    <datalist id="rooms">
+                        <option value="Room 110"></option>
+                        <option value="Room 210"></option>
+                        <option value="Room 310"></option>
+                        <option value="Room 337"></option>
+                        <option value="Room 410"></option>
+                    </datalist>
                 </div>
                 <div class="box e">
-                    <button type="button" value="Submit" onclick="setQuestion4()">Submit</button>
-                    <button>Clear</button>
+                    <button type="button" value="Submit" onclick="window.location.assign('result.html')">Submit and Grade</button>
+                    <button>Skip and Grade</button>
                 </div>
             </div>
         </form>

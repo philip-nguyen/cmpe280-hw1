@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" src="grading.js"></script>
+  </head>
+  <body>
+    <h2>Score Card</h2>
+    <div class="box a">
+      <details>
+        <summary>Quantitative Section</summary>
+        <strong>Numbers of Questions Answered: </strong><p id="math-1"></p>
+        <strong>Numbers of Correct Answers: </strong><p id="math-2"></p>
+        <strong>Score: </strong><p id="math-3"></p>
+      </details>
+      <details>
+        <summary>Reading Section</summary>
+        <strong>Numbers of Questions Answered: </strong><p id="read-1"></p>
+        <strong>Numbers of Correct Answers: </strong><p id="read-2"></p>
+        <strong>Score: </strong><p id="read-3"></p>
+      </details>
+      <details>
+        <summary>Audio/Video Section</summary>
+        <strong>Numbers of Questions Answered: </strong><p id="av-1"></p>
+        <strong>Numbers of Correct Answers: </strong><p id="av-2"></p>
+        <strong>Score: </strong><p id="av-3"></p>
+      </details>
+    </div>
+    <div class="box a">
+      <h2>Thank you!!!</h2>
+      <button onclick="window.location.href('index.html')">Finish</button>
+    </div>
+    <script>
+      calcGrade();
+    </script>
+  </body>
+</html>
