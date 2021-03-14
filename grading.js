@@ -35,6 +35,13 @@ function setQuestion4() {
     window.location.assign("survey.html");
 }
 
+function clearSelection(name) {
+    event.preventDefault();
+    var ele = document.getElementsByName(name);
+    for(var i=0; i < ele.length; i++)
+        ele[i].checked = false;
+}
+
 function calcGrade() {
     var q1 = sessionStorage.getItem("q1");
     var q2 = sessionStorage.getItem("q2");
